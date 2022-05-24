@@ -22,7 +22,13 @@ git clone https://github.com/ostilo/FootballFixtures.git
  
 Getting Started
 Clone the Repository
+
+#Guideline
+
 Get the API Key from https://www.football-data.org
+
+Add your API KEY in the local.properties file
+
 Put API Key in local.properties 
 
 <img src="https://github.com/ostilo/FootballFixtures/raw/master/Screenshot%202022-05-24%20at%2012.56.20.png" width="250" height="500" />
