@@ -14,7 +14,7 @@ Minimum Deployment Target - Android 5
 
 Android Studio
 
-Usage
+# Usage
 Clone the repository:
 
 git clone https://github.com/ostilo/FootballFixtures.git
@@ -23,7 +23,7 @@ git clone https://github.com/ostilo/FootballFixtures.git
 Getting Started
 Clone the Repository
 
-#Guideline
+# Guideline
 
 Get the API Key from https://www.football-data.org
 
