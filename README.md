@@ -24,6 +24,7 @@ Getting Started
 Clone the Repository
 Get the API Key from https://www.football-data.org
 Put API Key in local.properties 
+![test image size]<img src="https://fullpath/assets/yourgif.gif" width="400" height="790">
 
 
 ![alt text](https://github.com/ostilo/FootballFixtures/raw/master/Screenshot%202022-05-24%20at%2012.56.20.png?raw=true)
