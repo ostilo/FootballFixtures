@@ -28,6 +28,8 @@ Put API Key in local.properties
 <div style="width:60px ; height:60px">
 ![alt text](https://github.com/ostilo/FootballFixtures/raw/master/Screenshot%202022-05-24%20at%2012.56.20.png?raw=true "Sample Shot")
 <div>
+ 
+ ![](https://github.com/ostilo/FootballFixtures/raw/master/Screenshot%202022-05-24%20at%2012.56.20.png | width=50 )
 
 
 ![alt text](https://github.com/ostilo/FootballFixtures/raw/master/Screenshot%202022-05-24%20at%2012.56.20.png?raw=true)
