@@ -1,7 +1,7 @@
 # FootballFixtures
 Football Fixtures
 
-Architecture
+# Architecture
 MVVM
 
 Features
