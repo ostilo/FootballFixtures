@@ -27,3 +27,8 @@ Put API Key in local.properties
 
 <img src="https://github.com/ostilo/FootballFixtures/raw/master/Screenshot%202022-05-24%20at%2012.56.20.png" width="250" height="500" />
 
+<img src="https://github.com/ostilo/FootballFixtures/raw/master/Screenshot%202022-05-24%20at%2012.56.30.png" width="250" height="500" />
+<img src="https://github.com/ostilo/FootballFixtures/raw/master/Screenshot%202022-05-24%20at%2013.14.07.png" width="250" height="500" />
+
+
+
