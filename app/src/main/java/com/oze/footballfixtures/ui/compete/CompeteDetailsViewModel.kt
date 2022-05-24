@@ -1,5 +1,6 @@
 package com.oze.footballfixtures.ui.compete
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import com.oze.footballfixtures.presentation.NetworkStatus
@@ -25,7 +26,11 @@ class CompetitionDetailsViewModel @Inject constructor(
         when (val result = getTableUseCase.invoke(id)) {
             is NetworkStatus.Success -> emit(NetworkStatus.Success(result.data?.map()))
             is NetworkStatus.Error -> emit(NetworkStatus.Error(result.errorMessage, null))
+        }
+            try {
 
+        }catch (e:Exception){
+            Log.e("Exception",e.localizedMessage)
         }
     }
 
@@ -38,10 +43,14 @@ class CompetitionDetailsViewModel @Inject constructor(
     }
 
     fun getTeams(id: Long) = liveData {
-        emit(NetworkStatus.Loading())
-        when (val result = getTeamUseCase.invoke(id)) {
-            is NetworkStatus.Success -> emit(NetworkStatus.Success(result.data?.map()))
-            is NetworkStatus.Error -> emit(NetworkStatus.Error(result.errorMessage, null))
+        try {
+            emit(NetworkStatus.Loading())
+            when (val result = getTeamUseCase.invoke(id)) {
+                is NetworkStatus.Success -> emit(NetworkStatus.Success(result.data?.map()))
+                is NetworkStatus.Error -> emit(NetworkStatus.Error(result.errorMessage, null))
+            }
+        }catch (e:Exception){
+            Log.e("NetworkStatus",e.localizedMessage)
         }
     }
 

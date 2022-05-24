@@ -90,8 +90,8 @@ fun Team.map() =
         crestUrl = crestUrl ?: ""
     )
 
-fun DomainEntities.DomainTeam.map() =
-    Team(id = id, name = name, shortName = shortName, crestUrl = crestUrl)
+fun DomainEntities.DomainTeam?.map() =
+    Team(id = this?.id ?: 1, name = this?.name ?: "", shortName = this?.shortName ?: "", crestUrl = this?.crestUrl)
 
 fun PlayerResponse.map() = DomainEntities.DomainPlayerResponse(
     id = id,
@@ -101,8 +101,8 @@ fun PlayerResponse.map() = DomainEntities.DomainPlayerResponse(
     squad = squad.map { it.map() }
 )
 
-fun DomainEntities.DomainPlayerResponse.map() = PlayerResponse(
-    id = id,
+fun DomainEntities.DomainPlayerResponse?.map() = PlayerResponse(
+    id = this!!.id,
     name = name,
     shortName = shortName,
     crestUrl = crestUrl,
@@ -118,8 +118,8 @@ fun Player.map() =
         count = count
     )
 
-fun DomainEntities.DomainPlayer.map() =
-    Player(id = id, name = name, position = position, role = role, count = count)
+fun DomainEntities.DomainPlayer?.map() =
+    Player(id = this!!.id, name = name, position = position, role = role, count = count)
 
 fun StandingResponse.map() = DomainEntities.DomainStandingResponse(
     standings = standings.map { it.map() }
@@ -129,7 +129,7 @@ fun DomainEntities.DomainStandingResponse.map() = StandingResponse(
     standings = standings.map { it.map() }
 )
 
-fun Standing.map() = DomainEntities.DomainStanding(table = table.map { it.map() })
+fun Standing?.map() = DomainEntities.DomainStanding(table = this!!.table.map { it.map() })
 
 fun DomainEntities.DomainStanding.map() = Standing(table = table.map { it.map() })
 
