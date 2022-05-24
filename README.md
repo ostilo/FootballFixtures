@@ -26,7 +26,7 @@ Get the API Key from https://www.football-data.org
 Put API Key in local.properties 
 
 
- ![](https://github.com/ostilo/FootballFixtures/raw/master/Screenshot%202022-05-24%20at%2012.56.20.png | width=50 )
+ ![](https://github.com/ostilo/FootballFixtures/raw/master/Screenshot%202022-05-24%20at%2012.56.20.png  =100x100 )
 
 
 ![alt text](https://github.com/ostilo/FootballFixtures/raw/master/Screenshot%202022-05-24%20at%2012.56.20.png?raw=true)
