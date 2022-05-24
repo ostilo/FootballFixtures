@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFFFFF</color>
+    <color name="purple_500">#DBDBDB</color>
+    <color name="purple_700">#E4E1E1</color>
+    <color name="teal_200">#E4E1E1</color>
+    <color name="teal_700">#E4E1E1</color>
+    <color name="black">#FF000000</color>
+    <!--Icon Color-->
+    <color name="activeIconColor">#333333</color>
+    <color name="inactiveIconColor">#767676</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="listBgColor">#FAFAFA</color>
+    <!--Text Colors-->
+    <color name="titleColor">#545454</color>
+    <color name="textColor">#333333</color>
+    <color name="scoreBoardColor">#B3B3B3</color>
+    <color name="tabActiveItemColor">#000000</color>
+
+
+</resources>

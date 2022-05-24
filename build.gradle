@@ -1,0 +1,41 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext{
+        kotlin_version = '1.6.21'
+
+        retrofitMoshi = "2.9.0"
+        gson_version = "2.9.0"
+        retrofit_version ='2.9.0'
+        okhttp_version = '5.0.0-alpha.6'
+        coroutines_version = '1.3.5-native-mt'
+        room_version = '2.5.0-alpha01'
+        svgDecoderVersion = "1.2.1"
+        shapeImageVersion = "0.9.3@aar"
+        hilt_version = '2.41'
+        glideVersion = "4.9.0"
+        lifecycle = "2.2.0"
+        logginInterceptor = "4.7.2"
+        okHttp ="3.12.1"
+        moshiVersion = "1.13.0"
+        kotlinDependency = "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+
+
+    }
+}
+plugins {
+    id 'com.android.application' version '7.2.0-rc02' apply false
+    id 'com.android.library' version '7.2.0-rc02' apply false
+     id 'org.jetbrains.kotlin.android' version '1.6.21' apply false
+    id "com.google.dagger.hilt.android" version '2.41' apply false
+    id 'androidx.navigation.safeargs.kotlin' version '2.4.1' apply false
+
+
+
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

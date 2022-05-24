@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_pager_nav_graph"
+    app:startDestination="@id/viewPagerFragment">
+
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.oze.footballfixtures.ui.compete.ViewPagerFragment"
+        tools:layout="@layout/fragment_view_pager">
+
+        <argument
+            android:name="competition"
+            app:argType="com.oze.footballfixtures.presentation.Competitions" />
+    </fragment>
+</navigation>

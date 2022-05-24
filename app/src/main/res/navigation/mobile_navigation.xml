@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/todayFixtureFragment">
+
+    <fragment
+        android:id="@+id/todayFixtureFragment"
+        android:name="com.oze.footballfixtures.ui.competition.TodayFixturesFragment"
+        android:label="Today's Fixture"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/competitionsFragment"
+        android:name="com.oze.footballfixtures.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_competitionsFragment_to_view_pager_nav_graph"
+            app:destination="@id/view_pager_nav_graph">
+
+            <argument android:name="competition"
+                app:argType="com.oze.footballfixtures.presentation.Competitions"/>
+
+        </action>
+
+    </fragment>
+    <include app:graph="@navigation/view_pager_nav_graph"/>
+
+
+</navigation>
